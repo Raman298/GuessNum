@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        <p class="game-description">I'm thinking of a number between 1 and 100. Can you guess it?</p>
+        
+        <div class="input-area">
+            <input type="number" id="guessInput" min="1" max="100" placeholder="Enter your guess (1-100)">
+            <button id="guessButton">Submit Guess</button>
+        </div>
+        
+        <div class="feedback" id="feedback">
+            Start guessing! You have unlimited attempts.
+        </div>
+        
+        <div class="guess-history" id="guessHistory">
+            <!-- Previous guesses will appear here -->
+        </div>
+        
+        <div class="result" id="result"></div>
+        
+        <div class="instructions">
+            <h3>How to Play:</h3>
+            <ul>
+                <li>I've selected a random number between 1 and 100</li>
+                <li>Enter your guess in the input field</li>
+                <li>I'll tell you if your guess is too high or too low</li>
+                <li>Keep guessing until you find the correct number!</li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>
